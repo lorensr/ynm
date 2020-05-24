@@ -1,7 +1,11 @@
-export default function App({ children }) {
+import useMagicLink from 'use-magic-link'
+
+export default function App({ Component, pageProps }) {
+  const auth = useMagicLink(process.env.NEXT_PUBLIC_MAGIC_LINK_PUBLIC_KEY) || {}
+
   return (
     <main>
-      {children}
+      <Component {...pageProps} auth={auth} />
       <style jsx global>{`
         * {
           font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
