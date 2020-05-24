@@ -1,0 +1,26 @@
+{
+  "name": "ynm",
+  "version": "0.1.0",
+  "description": "Yes No Maybe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorensr/ynm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lorensr/ynm/issues"
+  },
+  "homepage": "https://github.com/lorensr/ynm#readme",
+  "dependencies": {
+    "apollo-server-micro": "^2.13.1",
+    "next": "^9.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
