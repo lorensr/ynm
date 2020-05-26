@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import PostList from '../components/PostList'
 import { withApollo } from '../lib/withApollo'
 
-const IndexPage = ({ auth, hi, ...a }) => {
+const IndexPage = ({ auth }) => {
   function loginNow() {
     const email = prompt('Enter your email')
 
@@ -13,6 +13,7 @@ const IndexPage = ({ auth, hi, ...a }) => {
   }
 
   function getContent() {
+    console.log(auth, typeof window)
     if (auth.loading || auth.loggingIn || auth.loggingOut) {
       return '...'
     }

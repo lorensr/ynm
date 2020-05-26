@@ -1,4 +1,5 @@
 import useMagicLink from 'use-magic-link'
+// import useMagicLink from '../hooks/useMagicLink'
 
 export default function App({ Component, pageProps }) {
   const auth = useMagicLink(process.env.NEXT_PUBLIC_MAGIC_LINK_PUBLIC_KEY) || {}
