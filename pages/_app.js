@@ -1,52 +1,27 @@
 import useMagicLink from 'use-magic-link'
 // import useMagicLink from '../hooks/useMagicLink'
+import Head from 'next/head'
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from '../lib/theme'
 
 export default function App({ Component, pageProps }) {
   const auth = useMagicLink(process.env.NEXT_PUBLIC_MAGIC_LINK_PUBLIC_KEY) || {}
 
   return (
-    <main>
-      <Component {...pageProps} auth={auth} />
-      <style jsx global>{`
-        * {
-          font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
-            'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
-            monospace, serif;
-        }
-        body {
-          margin: 0;
-          padding: 25px 50px;
-        }
-        a {
-          color: #22bad9;
-        }
-        p {
-          font-size: 14px;
-          line-height: 24px;
-        }
-        article {
-          margin: 0 auto;
-          max-width: 650px;
-        }
-        button {
-          align-items: center;
-          background-color: #22bad9;
-          border: 0;
-          color: white;
-          display: flex;
-          padding: 5px 7px;
-          transition: background-color 0.3s;
-        }
-        button:active {
-          background-color: #1b9db7;
-        }
-        button:disabled {
-          background-color: #b5bebf;
-        }
-        button:focus {
-          outline: none;
-        }
-      `}</style>
-    </main>
+    <>
+      <Head>
+        <title>Yes No Maybe</title>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+      </Head>
+
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} auth={auth} />
+      </ThemeProvider>
+    </>
   )
 }
