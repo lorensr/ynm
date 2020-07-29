@@ -19,11 +19,20 @@ second user flow:
 
 - user accounts
 - saved questionnaires
+- per-answer notes
 - share answered questionnaires
 - see intersection between 2+ specific people
 - multiple distinct answer sets (to share to diff ppl)
+- list of my answer sets 
+  - what the answers are
+  - edit. update or "save as new"
+  - who i've shared access with
+- delete or regenerate private link. (granular revoking with individual links?)
+- answer sets that have been shared with me
 - anonymous answer links?
+- custom questions?
 
 ## Questions
 
 - where do questions come from?
+- what happens when we change questions
