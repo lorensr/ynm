@@ -1,38 +1,17 @@
-# Design
+[Design doc](https://docs.google.com/document/d/1RuOpcKU6vltbpkaFGFdc8MV3n3P9wTwDri-0FfRmeOI/edit)
 
-## UX
+# Development
 
-new user flow:
+```sh
+$ npm run dev
+```
 
-- answer basic / high level questions (one at a time and customized based on answers)
-- sign up
-- receive private answer link, and somehow surface other features:
-  - see other question sets (grayed out based on No's from BASIC)
-  - intersections, etc
+# Deployment
 
-second user flow:
+Local deploy:
 
-- option 1: force answering before seeing shared answers
-- option 2: reading their answers, prompt to answer and save
+```sh
+$ vercel
+```
 
-## Features
-
-- user accounts - no social login!? 😄 for seeming private. and ease of implementation 😁
-- saved questionnaires
-- per-answer notes
-- share answered questionnaires
-- see intersection between 2+ specific people
-- multiple distinct answer sets (to share to diff ppl)
-- list of my answer sets 
-  - what the answers are
-  - edit. update or "save as new"
-  - who i've shared access with
-- delete or regenerate private link. (granular revoking with individual links?)
-- answer sets that have been shared with me
-- anonymous answer links?
-- custom questions?
-
-## Questions
-
-- where do questions come from?
-- what happens when we change questions
+Pushing to `master` deploys to prod (https://yesnomaybe.menu/).
