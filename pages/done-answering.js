@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Router from 'next/router'
+import Link from 'next/link'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 
@@ -32,10 +33,15 @@ const QuestionsPage = ({ auth }) => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        ;
         <Button type="submit" variant="contained" color="primary">
           Save
         </Button>
       </form>
+
+      <p>
+        Or <Link href="/questions/4">answer more!</Link>
+      </p>
     </>
   )
 }
