@@ -17,7 +17,7 @@ second user flow:
 
 ## Features
 
-- user accounts
+- user accounts - no social login!? 😄 for seeming private. and ease of implementation 😁
 - saved questionnaires
 - per-answer notes
 - share answered questionnaires
