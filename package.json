@@ -27,10 +27,13 @@
     "apollo-server-micro": "^2.14.2",
     "async-sema": "^3.1.0",
     "event-emitter": "^0.3.5",
+    "graphql-scalars": "^1.2.6",
     "isomorphic-unfetch": "^3.0.0",
+    "mongodb": "^3.6.0",
     "next": "^9.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "url": "^0.11.0",
     "use-magic-link": "^1.1.1"
   }
 }
