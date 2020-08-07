@@ -137,6 +137,8 @@ const apolloServer = new ApolloServer({
   resolvers,
   context,
   formatError: console.log,
+  introspection: true,
+  playground: true,
 })
 
 export default apolloServer.createHandler({ path: '/api/graphql' })
