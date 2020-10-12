@@ -1,0 +1,12 @@
+{
+  "name": "ynm",
+  "displayName": "ynm",
+  "expo": {
+    "name": "ynm",
+    "slug": "ynm",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
